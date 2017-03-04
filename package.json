@@ -17,10 +17,17 @@
   "license": "MIT",
   "homepage": "https://github.com/alicoding/react-webpack-babel#readme",
   "dependencies": {
+    "express": "^4.14.1",
+    "johnny-five": "^0.10.6",
+    "mobx": "^3.1.2",
+    "mobx-react": "^4.1.1",
+    "mobx-react-devtools": "^4.2.11",
     "node-sass": "^4.3.0",
     "react": "15.4.2",
+    "react-bootstrap": "^0.30.7",
     "react-dom": "15.4.2",
-    "sass-loader": "^6.0.2"
+    "sass-loader": "^6.0.2",
+    "socket.io": "^1.7.3"
   },
   "devDependencies": {
     "babel-core": "^6.23.1",

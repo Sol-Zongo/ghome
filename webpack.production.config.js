@@ -13,7 +13,7 @@ loaders.push({
 
 module.exports = {
 	entry: [
-		'./src/index.jsx',
+		'./client/index.jsx',
 		'./styles/index.scss'
 	],
 	output: {
@@ -48,10 +48,10 @@ module.exports = {
 				allChunks: true
 		}),
 		new HtmlWebpackPlugin({
-			template: './src/template.html',
+			template: './client/template.html',
 			files: {
 				css: ['style.css'],
-				js: [ "bundle.js"],
+				js: [ "bundle.js", "http://localhost:3000/socket.io/socket.io.js"],
 			}
 		})
 	]

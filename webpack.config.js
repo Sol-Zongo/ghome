@@ -7,7 +7,7 @@ var DashboardPlugin = require('webpack-dashboard/plugin');
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 const HOST = process.env.HOST || "127.0.0.1";
-const PORT = process.env.PORT || "8888";
+const PORT = process.env.PORT || "5000";
 
 loaders.push({
 	test: /\.css$/,
@@ -24,7 +24,7 @@ loaders.push({
 module.exports = {
 	entry: [
 		'react-hot-loader/patch',
-		'./src/index.jsx', // your app's entry point
+		'./client/index.jsx', // your app's entry point
 	],
 	devtool: process.env.WEBPACK_DEVTOOL || 'eval-source-map',
 	output: {
@@ -60,10 +60,10 @@ module.exports = {
 		}),
 		new DashboardPlugin(),
 		new HtmlWebpackPlugin({
-			template: './src/template.html',
+			template: './client/template.html',
 			files: {
 				css: ['style.css'],
-				js: [ "bundle.js"],
+				js: [ "bundle.js", "http://localhost:3000/socket.io/socket.io.js"],
 			}
 		}),
 	]
