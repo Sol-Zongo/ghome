@@ -18,16 +18,21 @@
   "homepage": "https://github.com/alicoding/react-webpack-babel#readme",
   "dependencies": {
     "express": "^4.14.1",
+    "forever-monitor": "^1.7.1",
     "johnny-five": "^0.10.6",
     "mobx": "^3.1.2",
     "mobx-react": "^4.1.1",
     "mobx-react-devtools": "^4.2.11",
+    "mongodb": "^2.2.24",
+    "mongoose": "^4.8.6",
     "node-sass": "^4.3.0",
     "react": "15.4.2",
-    "react-bootstrap": "^0.30.7",
     "react-dom": "15.4.2",
+    "react-router": "^3.0.2",
+    "resolve-url-loader": "^2.0.2",
     "sass-loader": "^6.0.2",
-    "socket.io": "^1.7.3"
+    "socket.io": "^1.7.3",
+    "sync": "^0.2.5"
   },
   "devDependencies": {
     "babel-core": "^6.23.1",
@@ -41,6 +46,7 @@
     "css-loader": "0.26.1",
     "extract-text-webpack-plugin": "^v2.0.0-rc.1",
     "file-loader": "^0.10.0",
+    "html-webpack-externals-plugin": "^2.2.1",
     "html-webpack-plugin": "^2.26.0",
     "postcss-loader": "^1.2.2",
     "react-hot-loader": "^3.0.0-beta.6",
